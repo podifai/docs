@@ -292,5 +292,5 @@ Before deploying, verify:
 ## Contact
 
 For questions about this documentation system:
-- Email: support@podifai.com
+- Email: hello@podifai.com
 - Documentation issues: Create GitHub issue in docs repository

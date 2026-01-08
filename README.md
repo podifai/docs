@@ -145,7 +145,7 @@ All option types support both **Standard** and **Accordion** display modes.
 
 ## 📧 Support
 
-- **Email**: support@podifai.com
+- **Email**: hello@podifai.com
 - **Documentation Issues**: Create an issue in this repository
 
 ## 📄 License

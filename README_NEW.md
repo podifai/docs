@@ -151,4 +151,4 @@ To add or update documentation:
 
 ## Support
 
-For questions about the documentation, contact support@podifai.com.
+For questions about the documentation, contact hello@podifai.com.

@@ -7,8 +7,8 @@
     "light": "#454545",
     "dark": "#000000"
   },
-  "borderRadius": "8px",
-  "favicon": "/favicon.png",
+  "borderRadius": "4px",
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
