@@ -1,0 +1,73 @@
+---
+title: "Conditional Logic"
+description: "Show or hide options based on customer selections."
+---
+
+**Conditional Logic** allows you to create dynamic, interactive customizers by showing or hiding options based on your customers' previous selections. This creates a more streamlined and personalized experience.
+
+## Why Use Conditional Logic?
+
+Conditional logic helps you:
+
+-   Simplify complex customizers by showing only relevant options
+-   Guide customers through the customization process
+-   Reduce confusion by hiding options that don't apply
+-   Create product bundles or add-ons that appear conditionally
+
+## How Conditional Logic Works
+
+Conditional logic uses "if-then" rules. For example:
+
+-   **If** a customer selects "Engraving" → **Then** show the "Engraving Text" input field
+-   **If** a customer chooses "Gift Wrap" → **Then** show the "Gift Message" option
+
+## Setting Up Conditional Logic
+
+1.  In the option set editor, select the option you want to make conditional.
+2.  Click on the **Conditional Logic** tab.
+3.  Click **Add Rule**.
+4.  Choose the condition: "Show this option if..." or "Hide this option if..."
+5.  Select the triggering option and its value.
+6.  Save your changes.
+
+![Setting up conditional logic](/images/screenshots/settings/conditional-logic-setup.png)
+*Configure rules to show or hide options based on customer selections.*
+
+## Example Use Cases
+
+### Example 1: Engraving Option
+
+Show the "Engraving Text" input only if the customer selects "Yes" for "Add Engraving?"
+
+**Rule**: Show "Engraving Text" if "Add Engraving?" equals "Yes"
+
+### Example 2: Gift Wrapping
+
+Show gift wrapping options only if the customer selects "This is a gift"
+
+**Rule**: Show "Gift Wrap Style" if "Is this a gift?" equals "Yes"
+
+### Example 3: Premium Materials
+
+Show premium material options only if the customer selects a specific product variant
+
+**Rule**: Show "Premium Leather" if "Material" equals "Leather"
+
+## Best Practices
+
+<Tip>
+Use conditional logic sparingly to avoid creating overly complex customizers that are difficult for customers to navigate.
+</Tip>
+
+<Note>
+Test your conditional logic thoroughly to ensure options appear and disappear as expected.
+</Note>
+
+## Advanced Conditional Logic
+
+You can create more complex rules by combining multiple conditions:
+
+-   **AND** logic: Show an option only if multiple conditions are met
+-   **OR** logic: Show an option if any of several conditions are met
+
+For example: Show "Express Shipping" if "Order Value" is greater than $100 **AND** "Location" equals "USA"
