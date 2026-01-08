@@ -7,7 +7,8 @@
     "npm": ">=10.0.0"
   },
   "scripts": {
-    "dev": "mintlify dev",
+    "dev": "bash dev.sh",
+    "dev:direct": "mintlify dev",
     "install-mintlify": "npm install -g mintlify"
   },
   "keywords": [
