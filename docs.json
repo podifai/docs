@@ -7,7 +7,7 @@
     "light": "#454545",
     "dark": "#000000"
   },
-  "borderRadius": "4px",
+  "borderRadius": "0.5rem",
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
