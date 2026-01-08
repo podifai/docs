@@ -1,43 +1,157 @@
-# Mintlify Starter Kit
+# Podifai Documentation
 
-Use the starter kit to get your docs deployed and ready to customize.
+Official documentation for Podifai - the powerful Shopify product customization app.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+## 🚀 Quick Start
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+### Prerequisites
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+- **Node.js**: 20.18.1 (required)
+- **npm**: 10.0.0 or higher
 
-## Development
+### Installation
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/podifai/docs.git
+   cd docs
+   ```
+
+2. **Switch to the correct Node.js version**
+   
+   If you use **nvm** (Node Version Manager):
+   ```bash
+   nvm use
+   ```
+   
+   If you use **fnm** (Fast Node Manager):
+   ```bash
+   fnm use
+   ```
+   
+   Or manually install Node.js 20.18.1 from [nodejs.org](https://nodejs.org/)
+
+3. **Install Mintlify CLI**
+   ```bash
+   npm install -g mintlify
+   ```
+
+4. **Start the development server**
+   ```bash
+   mintlify dev
+   ```
+
+5. **Open in browser**
+   
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## 📝 Node.js Version Management
+
+This project requires **Node.js 20.18.1** for optimal compatibility.
+
+### Using nvm
+
+```bash
+# Install the required version
+nvm install 20.18.1
+
+# Use it for this project
+nvm use
+
+# Set as default (optional)
+nvm alias default 20.18.1
+```
+
+### Using fnm
+
+```bash
+# Install the required version
+fnm install 20.18.1
+
+# Use it for this project
+fnm use
+
+# Set as default (optional)
+fnm default 20.18.1
+```
+
+### Verify your Node.js version
+
+```bash
+node --version
+# Should output: v20.18.1
+```
+
+## 🛠️ Development
+
+### Available Scripts
+
+- `npm run dev` - Start Mintlify development server
+- `npm run install-mintlify` - Install Mintlify CLI globally
+
+### File Structure
 
 ```
-npm i -g mint
+docs/
+├── .nvmrc                    # Node.js version for nvm
+├── .node-version             # Node.js version for fnm
+├── package.json              # Node.js engine specification
+├── docs.json                 # Mintlify configuration
+├── index.mdx                 # Homepage
+├── getting-started/          # Getting started guides
+├── building-customizers/     # Customizer documentation
+│   ├── option-types/         # Option types (8 types)
+│   ├── global/               # Global settings (colors, fonts)
+│   ├── settings/             # Customizer settings
+│   └── visual/               # Visual customization
+├── advanced/                 # Advanced features
+├── templates/                # Template library
+├── support/                  # Help and support
+└── pricing/                  # Pricing and plans
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+## 📚 Documentation Structure
 
-```
-mint dev
-```
+### Option Types (8 types)
 
-View your local preview at `http://localhost:3000`.
+1. Image Swatch
+2. Color Swatch
+3. Font Swatch
+4. Dropdown
+5. Badge Group
+6. Text Input
+7. Text Area
+8. Image Upload
 
-## Publishing changes
+All option types support both **Standard** and **Accordion** display modes.
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+### Global Settings
 
-## Need help?
+- **Global Colors**: Primary + Neutral color system with 13 shades (25-950)
+- **Global Fonts**: Built-in, Shopify Theme, or Custom Upload
+- **Color Shades**: Tailwind-style color generation system
 
-### Troubleshooting
+## 🎨 Theme
 
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
+- **Primary Color**: #1D1E20 (Dark theme)
+- **Border Radius**: 8px
+- **Logo**: Podifai official logo
 
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+## 🔗 Links
+
+- **Website**: [https://podifai.com](https://podifai.com)
+- **Shopify App Store**: [https://apps.shopify.com/podifai](https://apps.shopify.com/podifai)
+- **Documentation**: [https://docs.podifai.com](https://docs.podifai.com)
+
+## 📧 Support
+
+- **Email**: support@podifai.com
+- **Documentation Issues**: Create an issue in this repository
+
+## 📄 License
+
+Private - All rights reserved by Podifai Pty Ltd
+
+---
+
+Built with [Mintlify](https://mintlify.com)

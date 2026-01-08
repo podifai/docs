@@ -1,0 +1,22 @@
+{
+  "name": "podifai-docs",
+  "version": "1.0.0",
+  "description": "Podifai Documentation",
+  "engines": {
+    "node": "20.18.1",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "dev": "mintlify dev",
+    "install-mintlify": "npm install -g mintlify"
+  },
+  "keywords": [
+    "podifai",
+    "documentation",
+    "shopify",
+    "product-customization"
+  ],
+  "author": "Podifai",
+  "license": "UNLICENSED",
+  "private": true
+}
