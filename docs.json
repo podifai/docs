@@ -8,7 +8,7 @@
     "dark": "#000000"
   },
   "borderRadius": "8px",
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -94,11 +94,10 @@
             "pages": [
               "templates/overview",
               "templates/jewelry",
+              "templates/home-deco",
+              "templates/gift",
               "templates/apparel",
-              "templates/home-goods",
-              "templates/food-beverage",
-              "templates/religious-gifts",
-              "templates/custom"
+              "templates/other"
             ]
           }
         ]
@@ -112,8 +111,7 @@
               "support/faq",
               "support/troubleshooting",
               "support/performance",
-              "support/contact",
-              "support/feature-requests"
+              "support/contact"
             ]
           },
           {
@@ -151,7 +149,7 @@
     "links": [
       {
         "label": "Get Support",
-        "href": "mailto:support@podifai.com"
+        "href": "mailto:hello@podifai.com"
       }
     ],
     "primary": {
