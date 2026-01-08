@@ -1,0 +1,147 @@
+---
+title: "Global Colors"
+description: "Configure global color schemes for your customizers"
+---
+
+## Overview
+
+Podifai provides a powerful global color system that allows you to define two main color palettes that can be used across all your option types. This ensures consistent branding and makes it easy to update colors across your entire customizer.
+
+## Color Scheme Types
+
+### Primary Color
+
+The **Primary Color** is your brand's main color. It's typically used for:
+- Call-to-action buttons
+- Selected options
+- Active states
+- Accent elements
+
+**Default**: `#E89623` (Orange)
+
+### Neutral Color
+
+The **Neutral Color** is used for text, borders, and backgrounds. It provides:
+- Text colors
+- Border colors
+- Background shades
+- Subtle UI elements
+
+**Default**: `#454343` (Dark Gray)
+
+## How to Set Global Colors
+
+<Steps>
+  <Step title="Open Global Settings">
+    Click the **Global Settings** button in the editor toolbar
+  </Step>
+  
+  <Step title="Select Color Type">
+    Choose either **Primary** or **Neutral** color to edit
+  </Step>
+  
+  <Step title="Pick Your Color">
+    Use the color picker to select your desired color, or enter a hex code directly
+  </Step>
+  
+  <Step title="Save Changes">
+    Click **Save** to apply the colors to all your customizers
+  </Step>
+</Steps>
+
+## Color Shades System
+
+When you set a primary or neutral color, Podifai automatically generates **13 color shades** ranging from very light to very dark. This gives you fine-grained control over your design.
+
+### Available Shades
+
+Each color generates the following shades:
+
+| Shade | Description | Use Case |
+|-------|-------------|----------|
+| 25 | Lightest | Very subtle backgrounds |
+| 50 | Extra Light | Light backgrounds |
+| 75 | Light | Hover states |
+| 100 | Light | Disabled states |
+| 200 | Light Medium | Borders |
+| 300 | Medium Light | Secondary text |
+| 400 | Medium | Placeholder text |
+| **500** | **Base Color** | **Your selected color** |
+| 600 | Medium Dark | Primary text |
+| 700 | Dark | Headings |
+| 800 | Extra Dark | Strong emphasis |
+| 900 | Darkest | Maximum contrast |
+| 950 | Ultra Dark | Deepest shade |
+
+<Note>
+The shade **500** is always your base color. Shades below 500 are lighter, and shades above 500 are darker.
+</Note>
+
+## Using Color Shades in Option Types
+
+When configuring any option type, you can select specific shades for different elements:
+
+### Text Colors
+- **Label Text**: Choose from `text25` to `text950`
+- **Help Text**: Select lighter shades like `text300` or `text400`
+- **Value Text**: Use darker shades like `text700` or `text800`
+
+### Background Colors
+- **Option Background**: Use light shades like `bg50` or `bg100`
+- **Selected State**: Use medium shades like `bg400` or `bg500`
+- **Hover State**: Use shades like `bg200` or `bg300`
+
+### Border Colors
+- **Default Border**: Use `border200` or `border300`
+- **Active Border**: Use `border500` or `border600`
+- **Focus Border**: Use your primary color at `border500`
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Choose Accessible Colors">
+    Ensure sufficient contrast between text and backgrounds. Use darker shades (700+) for text on light backgrounds, and lighter shades (300-) for text on dark backgrounds.
+  </Accordion>
+
+  <Accordion title="Maintain Brand Consistency">
+    Use your brand's primary color as the Primary Color. This ensures all customizers match your store's branding.
+  </Accordion>
+
+  <Accordion title="Test on Different Devices">
+    Colors may appear differently on various screens. Test your color scheme on mobile devices and different browsers.
+  </Accordion>
+
+  <Accordion title="Use Neutral for Text">
+    Reserve your Neutral color and its shades for text, borders, and subtle UI elements. This keeps your design clean and readable.
+  </Accordion>
+</AccordionGroup>
+
+## Example Color Schemes
+
+### E-commerce Store
+- **Primary**: `#E89623` (Warm Orange)
+- **Neutral**: `#454343` (Charcoal Gray)
+
+### Luxury Brand
+- **Primary**: `#C9A961` (Gold)
+- **Neutral**: `#1A1A1A` (Deep Black)
+
+### Modern Tech
+- **Primary**: `#3B82F6` (Blue)
+- **Neutral**: `#6B7280` (Cool Gray)
+
+## Related Documentation
+
+<CardGroup cols={2}>
+  <Card title="Global Fonts" icon="font" href="/building-customizers/global/fonts">
+    Configure global font settings
+  </Card>
+  
+  <Card title="Color Shades Reference" icon="palette" href="/building-customizers/global/color-shades">
+    Complete color shades reference
+  </Card>
+</CardGroup>
+
+<Warning>
+Changing global colors will affect **all** option types in **all** customizers. Make sure to preview your changes before publishing.
+</Warning>

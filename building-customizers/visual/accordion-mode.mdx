@@ -1,0 +1,268 @@
+---
+title: "Accordion Mode"
+description: "Use accordion layout for collapsible option groups"
+---
+
+## Overview
+
+Every option type in Podifai supports **Accordion Mode**, which displays options in a collapsible, space-saving layout. This is perfect for customizers with many options or when you want to guide customers through choices step-by-step.
+
+## What is Accordion Mode?
+
+Accordion Mode presents options in expandable/collapsible sections. Only one section is visible at a time (or multiple, depending on your settings), helping customers focus on one choice at a time.
+
+**Benefits:**
+- **Saves Space**: Reduces visual clutter on product pages
+- **Improves Focus**: Customers concentrate on one option at a time
+- **Better Mobile Experience**: Ideal for smaller screens
+- **Guided Selection**: Creates a step-by-step customization flow
+
+## Accordion vs Standard Mode
+
+### Standard Mode
+- All options visible at once
+- Requires more vertical space
+- Best for simple customizers with few options
+- Faster for customers who know what they want
+
+### Accordion Mode
+- Options hidden until expanded
+- Compact and organized
+- Best for complex customizers with many options
+- Guides customers through the selection process
+
+## Supported Option Types
+
+**All option types support Accordion Mode:**
+
+- Image Swatch
+- Color Swatch
+- Font Swatch
+- Dropdown
+- Badge Group
+- Text Input
+- Text Area
+- Image Upload
+
+<Note>
+Accordion Mode is a display setting, not a separate option type. You can toggle any option type between Standard and Accordion modes.
+</Note>
+
+## How to Enable Accordion Mode
+
+<Steps>
+  <Step title="Select Your Option Type">
+    In the editor, click on the option type you want to configure
+  </Step>
+  
+  <Step title="Open Display Settings">
+    In the right sidebar, find the **Display Type** section
+  </Step>
+  
+  <Step title="Choose Accordion">
+    Select **Accordion** from the display type dropdown (default is **Standard**)
+  </Step>
+  
+  <Step title="Configure Accordion Settings">
+    Customize accordion behavior (expand on click, default open, etc.)
+  </Step>
+  
+  <Step title="Preview and Save">
+    Preview the accordion behavior and save your changes
+  </Step>
+</Steps>
+
+## Accordion Settings
+
+### Expand Behavior
+
+**Single Expand** (Recommended)
+- Only one accordion section open at a time
+- Opening a new section closes the previous one
+- Creates a guided, step-by-step experience
+
+**Multiple Expand**
+- Multiple sections can be open simultaneously
+- Customers can compare options more easily
+- Requires more scrolling
+
+### Default State
+
+**First Section Open**
+- The first option is expanded by default
+- Guides customers to start with the first choice
+- Recommended for most use cases
+
+**All Closed**
+- All sections start collapsed
+- Customers must click to see options
+- Good for advanced users or optional customizations
+
+**All Open**
+- All sections start expanded
+- Similar to Standard mode but with collapse capability
+- Useful when you want accordion structure but immediate visibility
+
+## Design Customization
+
+### Accordion Header
+
+Customize the appearance of accordion headers:
+
+- **Header Background**: Choose from color shades (e.g., `bg100`)
+- **Header Text**: Set color and size
+- **Expand Icon**: Customize the expand/collapse indicator
+- **Border**: Add or remove borders between sections
+
+### Accordion Content
+
+Customize the expanded content area:
+
+- **Content Background**: Usually lighter than header (e.g., `bg50`)
+- **Padding**: Adjust spacing inside the accordion
+- **Animation**: Set expand/collapse animation speed
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use for Complex Customizers">
+    If you have more than 5 option types, consider using Accordion Mode to reduce visual overwhelm.
+  </Accordion>
+
+  <Accordion title="Order Options Logically">
+    Arrange accordion sections in the order customers should make decisions (e.g., Size → Color → Engraving).
+  </Accordion>
+
+  <Accordion title="Make Headers Descriptive">
+    Use clear, action-oriented labels like "Choose Your Size" instead of just "Size".
+  </Accordion>
+
+  <Accordion title="Test on Mobile">
+    Accordion Mode is especially important on mobile devices. Always test the mobile experience.
+  </Accordion>
+
+  <Accordion title="Consider Single Expand">
+    For guided experiences, use single expand mode to focus customer attention on one choice at a time.
+  </Accordion>
+</AccordionGroup>
+
+## Use Cases
+
+### Jewelry Customization
+
+Perfect for multi-step jewelry customization:
+
+1. **Choose Metal Type** (Accordion)
+2. **Select Gemstone** (Accordion)
+3. **Add Engraving** (Accordion)
+4. **Choose Chain Length** (Accordion)
+
+Each step is revealed as the customer progresses.
+
+### Apparel Customization
+
+Great for clothing with many options:
+
+1. **Size & Fit** (Accordion)
+2. **Color** (Accordion)
+3. **Add Logo** (Accordion)
+4. **Add Text** (Accordion)
+
+Keeps the interface clean while offering extensive customization.
+
+### Gift Customization
+
+Ideal for gift products with optional add-ons:
+
+1. **Select Gift Box** (Accordion)
+2. **Add Gift Message** (Accordion)
+3. **Include Gift Wrap** (Accordion)
+4. **Add Gift Card** (Accordion)
+
+Customers can easily skip optional sections.
+
+## Accordion with Other Features
+
+### Accordion + Conditional Logic
+
+Combine accordion mode with conditional logic to show/hide entire sections based on previous choices:
+
+**Example**: Only show "Engraving Options" accordion if customer selects "Yes" to "Add Engraving?"
+
+### Accordion + Dynamic Pricing
+
+Display price changes in the accordion header:
+
+**Example**: "Add Gift Wrap (+$5.00)" shows the price impact directly in the header.
+
+### Accordion + Required Fields
+
+Mark required accordion sections with visual indicators:
+
+**Example**: Show a red asterisk (*) or "Required" badge on mandatory sections.
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Accordion not expanding on click">
+    **Possible causes:**
+    - JavaScript conflict with theme
+    - Browser caching issue
+    
+    **Solutions:**
+    - Clear browser cache
+    - Test in incognito mode
+    - Check browser console for errors
+  </Accordion>
+
+  <Accordion title="Accordion animation is jerky">
+    **Possible causes:**
+    - Too much content in accordion
+    - Slow device or browser
+    
+    **Solutions:**
+    - Reduce animation speed
+    - Optimize images inside accordion
+    - Test on different devices
+  </Accordion>
+
+  <Accordion title="Accordion header text is cut off">
+    **Possible causes:**
+    - Text too long for mobile screens
+    - Font size too large
+    
+    **Solutions:**
+    - Shorten header text
+    - Reduce font size for mobile
+    - Use responsive text sizing
+  </Accordion>
+</AccordionGroup>
+
+## Accessibility
+
+Accordion Mode is fully accessible:
+
+- **Keyboard Navigation**: Use Tab to navigate, Enter/Space to expand/collapse
+- **Screen Readers**: Properly announced as expandable regions
+- **Focus Indicators**: Clear visual focus states
+- **ARIA Labels**: Proper ARIA attributes for assistive technologies
+
+<Tip>
+Always test accordion functionality with keyboard-only navigation to ensure accessibility.
+</Tip>
+
+## Related Documentation
+
+<CardGroup cols={2}>
+  <Card title="Layout Options" icon="grid" href="/building-customizers/visual/layout-options">
+    Explore other layout options
+  </Card>
+  
+  <Card title="Conditional Logic" icon="code-branch" href="/building-customizers/settings/conditional-logic">
+    Combine accordion with conditional logic
+  </Card>
+</CardGroup>
+
+<Info>
+Accordion Mode is available for all option types and can be toggled on/off at any time without losing your configuration.
+</Info>

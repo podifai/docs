@@ -3,10 +3,11 @@
   "theme": "mint",
   "name": "Podifai Documentation",
   "colors": {
-    "primary": "#00E676",
-    "light": "#69F0AE",
-    "dark": "#00C853"
+    "primary": "#1D1E20",
+    "light": "#454545",
+    "dark": "#000000"
   },
+  "borderRadius": "8px",
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
@@ -36,14 +37,18 @@
               "building-customizers/option-types/color-swatch",
               "building-customizers/option-types/font-swatch",
               "building-customizers/option-types/dropdown",
-              "building-customizers/option-types/checkbox",
-              "building-customizers/option-types/radio-button",
+              "building-customizers/option-types/badge-group",
               "building-customizers/option-types/text-input",
               "building-customizers/option-types/text-area",
-              "building-customizers/option-types/number-input",
-              "building-customizers/option-types/date-picker",
-              "building-customizers/option-types/file-upload",
-              "building-customizers/option-types/badge-group"
+              "building-customizers/option-types/image-upload"
+            ]
+          },
+          {
+            "group": "Global Settings",
+            "pages": [
+              "building-customizers/global/colors",
+              "building-customizers/global/fonts",
+              "building-customizers/global/color-shades"
             ]
           },
           {
@@ -62,27 +67,8 @@
             "group": "Visual Customization",
             "pages": [
               "building-customizers/visual/choosing-themes",
-              "building-customizers/visual/customizing-colors",
-              "building-customizers/visual/font-styles",
               "building-customizers/visual/layout-options",
-              "building-customizers/visual/drag-reorder",
-              "building-customizers/visual/accordion-options"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Integration",
-        "groups": [
-          {
-            "group": "Shopify Integration",
-            "pages": [
-              "integration/connecting-shopify",
-              "integration/product-assignment",
-              "integration/cart-integration",
-              "integration/checkout-display",
-              "integration/order-management",
-              "integration/email-notifications"
+              "building-customizers/visual/accordion-mode"
             ]
           }
         ]
@@ -95,10 +81,7 @@
             "pages": [
               "advanced/live-preview",
               "advanced/multi-language",
-              "advanced/custom-css",
-              "advanced/api-access",
-              "advanced/webhooks",
-              "advanced/analytics"
+              "advanced/custom-css"
             ]
           }
         ]
@@ -156,11 +139,6 @@
           "anchor": "Shopify App Store",
           "href": "https://apps.shopify.com/podifai",
           "icon": "shop"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://podifai.com/community",
-          "icon": "users"
         }
       ]
     }
@@ -196,8 +174,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/podifai",
-      "linkedin": "https://linkedin.com/company/podifai",
+      "facebook": "https://www.facebook.com/podifai",
+      "instagram": "https://www.instagram.com/podifai",
       "website": "https://podifai.com"
     }
   }

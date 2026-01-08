@@ -1,0 +1,286 @@
+---
+title: "Color Shades Reference"
+description: "Complete reference for using color shades in your customizers"
+---
+
+## Overview
+
+Podifai's color shades system automatically generates 13 variations of each global color (Primary and Neutral), giving you precise control over every visual element in your customizers.
+
+## How Color Shades Work
+
+When you set a **Primary** or **Neutral** color in Global Settings, Podifai uses an intelligent algorithm to generate a full spectrum of shades:
+
+- **Lighter shades** (25-400): Created by progressively brightening your base color toward white
+- **Base shade** (500): Your selected color
+- **Darker shades** (600-950): Created by progressively darkening your base color toward black
+
+This system is inspired by Tailwind CSS's color palette approach, ensuring professional and harmonious color combinations.
+
+## Complete Shade Scale
+
+### Shade Numbers and Brightness
+
+| Shade | Brightness | Visual Weight | Common Uses |
+|-------|------------|---------------|-------------|
+| **25** | 98% | Ultra Light | Subtle backgrounds, ghost buttons |
+| **50** | 95% | Extra Light | Light backgrounds, disabled states |
+| **75** | 90% | Very Light | Hover backgrounds, light borders |
+| **100** | 85% | Light | Card backgrounds, input backgrounds |
+| **200** | 75% | Light Medium | Borders, dividers, inactive elements |
+| **300** | 65% | Medium Light | Secondary text, placeholder text |
+| **400** | 55% | Medium | Muted text, disabled text |
+| **500** | 50% | **Base** | **Primary actions, selected states** |
+| **600** | 45% | Medium Dark | Primary text, icons |
+| **700** | 35% | Dark | Headings, strong emphasis |
+| **800** | 25% | Extra Dark | High contrast text |
+| **900** | 15% | Darkest | Maximum contrast, deep backgrounds |
+| **950** | 8% | Ultra Dark | Deepest possible shade |
+
+<Note>
+Brightness percentages are approximate and depend on your base color's hue and saturation.
+</Note>
+
+## Using Shades in Option Types
+
+### Text Color Properties
+
+When configuring text colors in any option type, you can specify shades using this format:
+
+```
+text[shade]
+```
+
+**Examples:**
+- `text25` - Ultra light text (rarely used)
+- `text300` - Secondary text, help text
+- `text500` - Base color text
+- `text700` - Primary text, headings
+- `text900` - Maximum contrast text
+
+### Background Color Properties
+
+For background colors, use:
+
+```
+bg[shade]
+```
+
+**Examples:**
+- `bg50` - Very light background
+- `bg100` - Light card background
+- `bg500` - Base color background
+- `bg800` - Dark background
+
+### Border Color Properties
+
+For borders, use:
+
+```
+border[shade]
+```
+
+**Examples:**
+- `border200` - Light border
+- `border300` - Default border
+- `border500` - Prominent border
+- `border700` - Strong border
+
+## Practical Examples
+
+### Example 1: Light Theme Option
+
+```json
+{
+  "backgroundColor": "bg50",
+  "textColor": "text700",
+  "borderColor": "border200",
+  "hoverBackgroundColor": "bg100"
+}
+```
+
+**Result**: Light, clean appearance with good contrast
+
+### Example 2: Dark Theme Option
+
+```json
+{
+  "backgroundColor": "bg900",
+  "textColor": "text100",
+  "borderColor": "border700",
+  "hoverBackgroundColor": "bg800"
+}
+```
+
+**Result**: Dark, modern appearance
+
+### Example 3: Accent/Selected State
+
+```json
+{
+  "backgroundColor": "bg500",
+  "textColor": "text50",
+  "borderColor": "border600",
+  "hoverBackgroundColor": "bg600"
+}
+```
+
+**Result**: Bold, eye-catching selected state
+
+## Shade Selection Guide
+
+### For Light Backgrounds
+
+When using light background shades (25-200):
+
+- **Text**: Use dark shades (600-900) for readability
+- **Borders**: Use medium shades (200-400)
+- **Icons**: Use dark shades (700-900)
+
+### For Dark Backgrounds
+
+When using dark background shades (700-950):
+
+- **Text**: Use light shades (25-200) for readability
+- **Borders**: Use medium-light shades (400-600)
+- **Icons**: Use light shades (100-300)
+
+### For Medium Backgrounds
+
+When using medium background shades (300-600):
+
+- **Text**: Use either very light (25-100) or very dark (800-950)
+- **Borders**: Use contrasting shades (±200 from background)
+- **Icons**: Match text color for consistency
+
+## Accessibility Guidelines
+
+### WCAG Contrast Requirements
+
+To meet accessibility standards, ensure sufficient contrast between text and backgrounds:
+
+| Text Size | Minimum Contrast Ratio | Recommended Shade Combinations |
+|-----------|------------------------|--------------------------------|
+| **Normal Text** | 4.5:1 | bg50 + text700, bg900 + text100 |
+| **Large Text** | 3:1 | bg100 + text600, bg800 + text200 |
+| **UI Components** | 3:1 | bg200 + text600, bg700 + text200 |
+
+<Tip>
+**Quick Rule**: Keep at least 400-500 shade difference between text and background for good contrast.
+</Tip>
+
+### Testing Contrast
+
+Always test your color combinations:
+
+1. Use browser developer tools to check contrast ratios
+2. Test with users who have visual impairments
+3. View your customizers in different lighting conditions
+4. Check on various devices and screen types
+
+## Advanced Usage
+
+### Gradient Backgrounds
+
+Create subtle gradients using adjacent shades:
+
+```
+from-bg100 to-bg200
+```
+
+This creates a gentle gradient effect.
+
+### Hover States
+
+For interactive elements, shift shades by 100-200:
+
+- **Default**: `bg300`
+- **Hover**: `bg400` or `bg500`
+- **Active**: `bg500` or `bg600`
+
+### Focus States
+
+For focus indicators, use high-contrast shades:
+
+- **Focus Ring**: `border500` or `border600`
+- **Focus Background**: `bg100` or `bg200`
+
+## Color Shade Visualization
+
+### Primary Color Example
+
+If your Primary color is **#E89623** (Orange):
+
+| Shade | Hex Color | Preview |
+|-------|-----------|---------|
+| 25 | #FEF9F3 | Very pale orange |
+| 50 | #FDF3E7 | Pale orange |
+| 100 | #FCE7CF | Light orange |
+| 200 | #F9D0A0 | Soft orange |
+| 300 | #F5B871 | Medium-light orange |
+| 400 | #F1A147 | Medium orange |
+| **500** | **#E89623** | **Base orange** |
+| 600 | #C97E1E | Dark orange |
+| 700 | #A66719 | Darker orange |
+| 800 | #824F14 | Deep orange |
+| 900 | #5E380F | Very deep orange |
+| 950 | #3A220A | Ultra deep orange |
+
+### Neutral Color Example
+
+If your Neutral color is **#454343** (Dark Gray):
+
+| Shade | Hex Color | Preview |
+|-------|-----------|---------|
+| 25 | #FAFAFA | Almost white |
+| 50 | #F5F5F5 | Very light gray |
+| 100 | #E8E8E8 | Light gray |
+| 200 | #D4D4D4 | Soft gray |
+| 300 | #A3A3A3 | Medium-light gray |
+| 400 | #737373 | Medium gray |
+| **500** | **#454343** | **Base dark gray** |
+| 600 | #3A3838 | Darker gray |
+| 700 | #2F2D2D | Deep gray |
+| 800 | #242323 | Very deep gray |
+| 900 | #1A1919 | Almost black |
+| 950 | #0F0F0F | Near black |
+
+<Note>
+Actual generated shades may vary slightly based on the algorithm's optimization for visual harmony.
+</Note>
+
+## Best Practices
+
+<AccordionGroup>
+  <Accordion title="Use Consistent Shade Differences">
+    When creating visual hierarchies, use consistent shade increments (e.g., always 200 shades apart) for a harmonious design.
+  </Accordion>
+
+  <Accordion title="Limit Shade Variety">
+    Don't use all 13 shades in a single component. Stick to 3-5 shades for a clean, professional look.
+  </Accordion>
+
+  <Accordion title="Test in Context">
+    Always preview your shade choices in the actual customizer, not just in the color picker.
+  </Accordion>
+
+  <Accordion title="Document Your Choices">
+    Keep a reference of which shades you use for which elements to maintain consistency across customizers.
+  </Accordion>
+</AccordionGroup>
+
+## Related Documentation
+
+<CardGroup cols={2}>
+  <Card title="Global Colors" icon="palette" href="/building-customizers/global/colors">
+    Learn about the global color system
+  </Card>
+  
+  <Card title="Visual Customization" icon="paintbrush" href="/building-customizers/visual/choosing-themes">
+    Customize visual appearance
+  </Card>
+</CardGroup>
+
+<Warning>
+Color perception varies across devices and screens. Always test your color choices on multiple devices before finalizing your design.
+</Warning>
