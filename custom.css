@@ -1,0 +1,71 @@
+/* Podifai Documentation Custom Styles */
+
+/* Override Mintlify default border radius values */
+:root {
+  --rounded-xl: 0.5rem !important;
+  --rounded-lg: 0.5rem !important;
+  --rounded-md: 0.375rem !important;
+  --rounded-sm: 0.25rem !important;
+  --rounded: 0.5rem !important;
+}
+
+/* Force all rounded utility classes to use 0.5rem */
+.rounded-xl {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-md {
+  border-radius: 0.375rem !important;
+}
+
+.rounded-sm {
+  border-radius: 0.25rem !important;
+}
+
+.rounded {
+  border-radius: 0.5rem !important;
+}
+
+/* Override specific component border radius */
+button,
+.button,
+a.button {
+  border-radius: 0.5rem !important;
+}
+
+/* Cards and containers */
+.card,
+.container,
+.box {
+  border-radius: 0.5rem !important;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="search"],
+textarea,
+select {
+  border-radius: 0.5rem !important;
+}
+
+/* Code blocks */
+pre,
+code {
+  border-radius: 0.5rem !important;
+}
+
+/* Images */
+img {
+  border-radius: 0.5rem !important;
+}
+
+/* Navigation items */
+nav a,
+.nav-item {
+  border-radius: 0.5rem !important;
+}

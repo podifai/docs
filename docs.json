@@ -9,6 +9,7 @@
   },
   "borderRadius": "0.5rem",
   "favicon": "/favicon.jpg",
+  "customCSS": ["/custom.css"],
   "navigation": {
     "tabs": [
       {
