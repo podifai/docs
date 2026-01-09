@@ -64,6 +64,18 @@ img {
   border-radius: 0.5rem !important;
 }
 
+/* Logo - no border radius */
+.logo,
+.logo img,
+img[alt*="logo" i],
+img[alt*="Logo" i],
+img[src*="logo" i],
+[class*="logo" i] img,
+nav img:first-child,
+header img:first-child {
+  border-radius: 0 !important;
+}
+
 /* Navigation items */
 nav a,
 .nav-item {
