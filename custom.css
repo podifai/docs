@@ -81,3 +81,12 @@ nav a,
 .nav-item {
   border-radius: 0.5rem !important;
 }
+
+/* Hide "Powered by Mintlify" in footer */
+footer a[href*="mintlify"],
+footer [class*="powered"],
+footer [class*="branding"],
+.footer-branding,
+.powered-by {
+  display: none !important;
+}
