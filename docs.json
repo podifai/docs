@@ -24,6 +24,13 @@
               "getting-started/installation",
               "getting-started/first-customizer"
             ]
+          },
+          {
+            "group": "App Overview",
+            "pages": [
+              "getting-started/dashboard",
+              "getting-started/orders"
+            ]
           }
         ]
       },
@@ -41,7 +48,8 @@
               "building-customizers/option-types/badge-group",
               "building-customizers/option-types/text-input",
               "building-customizers/option-types/text-area",
-              "building-customizers/option-types/image-upload"
+              "building-customizers/option-types/image-upload",
+              "building-customizers/option-types/text-display"
             ]
           },
           {
@@ -56,6 +64,7 @@
             "group": "Customizer Settings",
             "pages": [
               "building-customizers/settings/creating-option-sets",
+              "building-customizers/settings/editor-guide",
               "building-customizers/settings/using-templates",
               "building-customizers/settings/conditional-logic",
               "building-customizers/settings/dynamic-pricing",

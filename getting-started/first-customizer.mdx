@@ -20,62 +20,103 @@ Before you begin, make sure you have:
 -   Installed the Podifai app on your Shopify store
 -   At least one product in your Shopify store that you want to add the customizer to
 
-## Step 1: Create a New Option Set
+## Step 1: Select Your Product
 
-1.  From your Podifai dashboard, navigate to **Option Sets**.
-2.  Click the **Create Option Set** button.
-3.  Name your option set "Jewelry Engraving".
+1.  Open the Podifai app from your Shopify admin.
+2.  You'll see the **Products** page with all your Shopify products listed.
+3.  Find the product you want to customize (e.g., "Custom Engraved Necklace").
+4.  Click the **Add Options** button next to the product.
 
-![Create a new option set](/images/screenshots/first-customizer/create-option-set.png)
-*Give your option set a descriptive name.*
+![Select a product from the Products page](/images/screenshots/first-customizer/select-product.png)
+*Click "Add Options" to open the customizer editor.*
 
 ## Step 2: Add a Color Swatch Option
 
-1.  In the option set editor, click **Add Option**.
-2.  Select **Color Swatch** from the list of option types.
-3.  Name the option "Metal Finish".
-4.  Add three color values: Gold (#FFD700), Silver (#C0C0C0), and Rose Gold (#B76E79).
+You'll now be in the visual editor. Let's add a color swatch for the metal finish.
+
+1.  In the left sidebar, click on the **Options** tab.
+2.  Find **Color Swatch** in the "Select" category.
+3.  Click on it to add it to your customizer (or drag it to the canvas).
+4.  In the right sidebar, configure the option:
+    -   **Label value**: "Metal Finish"
+    -   **Required field**: Toggle on
+5.  Click the **+** button next to "Option values" to add colors.
+6.  Configure each color option:
+    -   Gold (#FFD700)
+    -   Silver (#C0C0C0)
+    -   Rose Gold (#B76E79)
 
 ![Add a color swatch option](/images/screenshots/first-customizer/add-color-swatch.png)
-*Configure the color swatch with your desired colors.*
+*Configure the color swatch with your desired colors in the right panel.*
 
 ## Step 3: Add a Text Input Option
 
-1.  Click **Add Option** again.
-2.  Select **Text Input** from the list.
-3.  Name the option "Engraving Text".
-4.  Set a character limit of 20 characters.
+Now let's add a text input for the engraving text.
+
+1.  In the left sidebar **Options** tab, find **Text Input** in the "Inputs" category.
+2.  Click on it to add it to your customizer.
+3.  In the right sidebar, configure the option:
+    -   **Label value**: "Engraving Text"
+    -   **Placeholder**: "Enter your text here"
+    -   **Required field**: Toggle on
+    -   **Allow Character Limit**: Toggle on
+    -   **Max character**: 20
 
 ![Add a text input option](/images/screenshots/first-customizer/add-text-input.png)
 *Set a character limit to control the length of the engraving.*
 
 ## Step 4: Add a Dropdown Option
 
-1.  Click **Add Option** one more time.
-2.  Select **Dropdown** from the list.
-3.  Name the option "Number of Discs".
-4.  Add three values: "One", "Two", "Three".
+Finally, let's add a dropdown for the number of discs.
+
+1.  In the left sidebar **Options** tab, find **Dropdown** in the "Select" category.
+2.  Click on it to add it to your customizer.
+3.  In the right sidebar, configure the option:
+    -   **Label value**: "Number of Discs"
+    -   **Required field**: Toggle on
+4.  Add three option values:
+    -   One
+    -   Two
+    -   Three
 
 ![Add a dropdown option](/images/screenshots/first-customizer/add-dropdown.png)
 *A dropdown is perfect for a limited set of choices.*
 
-## Step 5: Assign to a Product
+## Step 5: Review in My Layers
 
-1.  Go to the **Product Assignment** tab in the option set editor.
-2.  Search for the product you want to add the customizer to.
-3.  Select the product from the list.
-4.  Click **Save**.
+Switch to the **My Layers** tab in the left sidebar to see all your options listed. You can:
 
-![Assign the option set to a product](/images/screenshots/first-customizer/assign-product.png)
-*Select the product you want to customize.*
+-   **Reorder** options by dragging them up or down
+-   **Duplicate** an option by clicking the copy icon
+-   **Delete** an option by clicking the trash icon
 
-## Step 6: Preview and Publish
+![Review your options in My Layers](/images/screenshots/first-customizer/my-layers.png)
+*My Layers shows all your options and lets you reorder them.*
 
-1.  Click the **Preview** button to see how your customizer looks on the product page.
-2.  If everything looks good, click the **Publish** button to make it live.
+## Step 6: Save Your Customizer
 
-![Preview and publish your customizer](/images/screenshots/first-customizer/preview-publish.png)
-*Preview your customizer before publishing.*
+Once you're happy with your options:
+
+1.  Click the **Save** button in the header.
+2.  Your customizer is now saved and ready to be activated.
+
+![Save your customizer](/images/screenshots/first-customizer/save.png)
+*Click Save to save your customizer configuration.*
+
+## Step 7: Activate the App
+
+If this is your first customizer, you'll need to activate the Podifai app embed:
+
+1.  Click **Next** at the bottom of the editor.
+2.  Follow the instructions to enable the app embed in your Shopify theme.
+3.  Once activated, your customizer will be live on your product page.
+
+![Activate the app embed](/images/screenshots/first-customizer/activate.png)
+*Enable the app embed to make your customizers visible on your store.*
+
+<Tip>
+You only need to activate the app embed once. After that, all customized products will automatically display their customizers.
+</Tip>
 
 Congratulations! You've just created your first product customizer with Podifai. Visit your product page to see it in action.
 
@@ -85,4 +126,4 @@ Now that you've created your first customizer, you can explore more advanced fea
 
 -   [Conditional Logic](/building-customizers/settings/conditional-logic): Show or hide options based on customer selections.
 -   [Dynamic Pricing](/building-customizers/settings/dynamic-pricing): Add extra charges for premium options.
--   [Visual Customization](/building-customizers/visual/choosing-themes): Customize the look and feel to match your brand.
+-   [Editor Guide](/building-customizers/settings/editor-guide): Learn all the features of the visual editor.

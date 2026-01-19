@@ -5,22 +5,56 @@ description: "Understand the core concepts and terminology used in Podifai."
 
 This page explains the key concepts and terms you'll encounter while using Podifai.
 
-### Option Set
+### Product Customizer
 
-An **Option Set** is a collection of custom options that you can apply to one or more products. It acts as a container for all the personalization choices you want to offer for a specific product or group of products.
+A **Product Customizer** is the collection of custom options you configure for a specific product. When you click "Add Options" on a product, you create a customizer for that product. Each product has its own customizer configuration.
 
 ### Option Type
 
-An **Option Type** is the specific type of input field you use to collect information from your customers. Podifai offers a wide range of option types, including:
+An **Option Type** is the specific type of input field you use to collect information from your customers. Podifai offers a wide range of option types, organized into categories:
 
--   **Text Input**: For short text entries like names or messages.
--   **Color Swatch**: To let customers choose from a selection of colors.
--   **File Upload**: To allow customers to upload their own images or files.
+**Select Options** (for choosing from predefined values):
+-   **Image Swatch**: Visual image-based selection options.
+-   **Color Swatch**: Color picker with swatches for color selection.
+-   **Font Swatch**: Font selection with preview.
+-   **Dropdown**: Classic dropdown menu for selecting from a list.
+-   **Badge Group**: Button-style badges for selecting options.
+
+**Input Options** (for customer-entered data):
+-   **Text Input**: Single-line text entry for names or short messages.
+-   **Text Area**: Multi-line text entry for longer messages.
+-   **Image Upload**: Allows customers to upload their own images.
+
+**Presentation Options** (for displaying information):
+-   **Text Display**: Display static text, instructions, or information to customers.
+
+### Display Type
+
+Each option can be displayed in one of two modes:
+
+-   **Standard**: The option is always expanded and visible.
+-   **Collapsible (Accordion)**: The option can be collapsed to save space, showing a summary when closed.
 
 ### Conditional Logic
 
-**Conditional Logic** allows you to show or hide options based on a customer's previous selections. This is useful for creating a dynamic and interactive customization experience.
+**Conditional Logic** allows you to show or hide options based on a customer's previous selections. This is useful for creating a dynamic and interactive customization experience. For example, you can show an "Engraving Text" option only when a customer selects "Yes" for "Add Engraving".
 
 ### Dynamic Pricing
 
 **Dynamic Pricing** enables you to add extra costs to your products based on the options a customer selects. This is perfect for offering premium customizations at an additional charge.
+
+### Help Text
+
+**Help Text** allows you to add guidance and instructions to your options. You can add a hint label (like "Size guide" or "Color guide") and descriptive text to help customers make their selections.
+
+### Required Field
+
+A **Required Field** is an option that customers must complete before adding the product to their cart. You can also configure minimum and maximum selections for options that allow multiple values.
+
+### My Layers
+
+**My Layers** is a panel in the editor that shows all the options you've added to the current product. You can reorder options by dragging them, duplicate options, or delete them from this panel.
+
+### App Embed
+
+The **App Embed** is a Shopify theme component that displays your customizers on product pages. You need to activate the app embed once in your Shopify theme settings for your customizers to appear on your store.

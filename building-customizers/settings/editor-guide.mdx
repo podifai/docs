@@ -1,0 +1,173 @@
+---
+title: "Editor Guide"
+description: "Learn how to use the Podifai visual editor to build product customizers."
+---
+
+The **Visual Editor** is where you build and configure your product customizers. This guide explains all the features and controls available in the editor.
+
+## Editor Overview
+
+When you click "Add Options" or "Edit Options" on a product, you enter the visual editor. The editor consists of three main areas:
+
+-   **Left Sidebar**: Add options and manage layers
+-   **Canvas**: Preview how your customizer will look
+-   **Right Sidebar**: Configure properties for the selected option
+
+![Editor overview](/images/screenshots/editor/overview.png)
+*The visual editor with left sidebar, canvas, and right sidebar.*
+
+## Left Sidebar
+
+The left sidebar has two tabs: **Options** and **My Layers**.
+
+### Options Tab
+
+The Options tab displays all available option types organized by category:
+
+**Select** (for choosing from predefined values):
+-   Image Swatch
+-   Color Swatch
+-   Font Swatch
+-   Dropdown
+-   Badge Group
+
+**Inputs** (for customer-entered data):
+-   Text Input
+-   Text Area
+-   Image Upload
+
+**Presentation** (for displaying information):
+-   Text Display
+
+To add an option:
+1.  Click on any option type to add it instantly.
+2.  Or drag the option to the canvas.
+3.  The new option appears on the canvas and in My Layers.
+
+### My Layers Tab
+
+The My Layers tab shows all options you've added to the current customizer:
+
+-   **Reorder**: Drag options up or down to change their order on the product page.
+-   **Select**: Click an option to select it and edit its properties.
+-   **Duplicate**: Click the copy icon to duplicate an option.
+-   **Delete**: Click the trash icon to remove an option.
+
+![My Layers panel](/images/screenshots/editor/my-layers.png)
+*My Layers shows all your options and lets you reorder them.*
+
+## Canvas
+
+The canvas displays a preview of your customizer as it will appear on your product page.
+
+### Canvas Controls
+
+-   **Zoom**: Use the scroll wheel or pinch gestures to zoom in and out.
+-   **Pan**: Click and drag to move around the canvas.
+-   **Select**: Click on an option to select it for editing.
+
+### Canvas Preview
+
+The canvas shows your options in their configured display modes (Standard or Collapsible). This gives you a visual preview of the customer experience.
+
+<Note>
+The canvas preview is a representation of your customizer. The actual appearance on your store may vary slightly based on your theme styling.
+</Note>
+
+## Right Sidebar
+
+When you select an option on the canvas or in My Layers, the right sidebar shows its configurable properties.
+
+### Properties Header
+
+-   **Option Name**: Shows which option you're editing (e.g., "Color Swatch Properties")
+-   **Close Button**: Click to deselect and return to global settings
+
+### Live Preview Badge
+
+The Live Preview feature shows "Coming Soon" and will provide real-time preview of customer selections in a future update.
+
+### General Settings
+
+Common settings available for most option types:
+
+| Property | Description |
+|----------|-------------|
+| **Display type** | Standard (always visible) or Collapsible (accordion) |
+| **Label value** | The name shown to customers |
+| **Placeholder** | Hint text for input fields |
+| **Required field** | Whether customers must complete this option |
+| **Default option** | Pre-selected value when the page loads |
+| **Help text** | Additional guidance for customers (Standard mode only) |
+
+### Selection Settings
+
+For options that support multiple selections:
+
+| Property | Description |
+|----------|-------------|
+| **Allow multiple option values** | Enable multi-select mode |
+| **Min selections** | Minimum number of selections required |
+| **Max selections** | Maximum number of selections allowed |
+
+### Price Settings
+
+For options with additional pricing:
+
+| Property | Description |
+|----------|-------------|
+| **Price** | Toggle to enable additional pricing |
+| **Additional Price** | Extra amount added to the product price |
+
+### Option Values
+
+For swatch, dropdown, and badge options, you can manage the available choices:
+
+-   **Add**: Click the + button to add new values.
+-   **Edit**: Click a value to edit its name, image, color, or price.
+-   **Reorder**: Drag values to change their order.
+-   **Copy**: Duplicate a value with the copy icon.
+-   **Delete**: Remove a value with the trash icon.
+
+### Appearance Settings
+
+Customize the visual style of your options:
+
+| Property | Description |
+|----------|-------------|
+| **Layout** | Grid, list, or other layout styles |
+| **Style** | Bold or Subtle visual weight |
+| **Size** | Small, Medium, or Large |
+| **Corner style** | Rounded or sharp corners |
+| **Type** | Outline, Fill, or Filled+Border |
+| **Colors** | Selected outline color, fill color, etc. |
+
+### Condition Settings
+
+Set up conditional logic to show or hide the option based on other selections:
+
+1.  Toggle **Condition** on.
+2.  Choose **All** or **Any** conditions must be met.
+3.  Add conditions by selecting a field and value.
+
+See [Conditional Logic](/building-customizers/settings/conditional-logic) for detailed instructions.
+
+## Saving Your Work
+
+Click the **Save** button in the header to save your customizer. Changes are applied immediately—there's no separate publish step.
+
+## Next Steps
+
+After saving your customizer:
+
+1.  Click **Next** to proceed to app activation (first time only).
+2.  Your customizer will appear on your product page.
+
+## Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Scroll` | Zoom in/out on canvas |
+| `Click + Drag` | Pan the canvas |
+| `Click` | Select an option |
+| `Escape` | Deselect current option |

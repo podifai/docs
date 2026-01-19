@@ -1,80 +1,133 @@
 ---
-title: "Creating Option Sets"
-description: "Learn how to create and manage option sets in Podifai."
+title: "Creating Product Customizers"
+description: "Learn how to create and manage product customizers in Podifai."
 ---
 
-An **Option Set** is the foundation of your product customizer. It's a collection of custom options that you can apply to one or more products in your Shopify store.
+A **Product Customizer** is the collection of custom options you configure for a specific product. Each product in your Shopify store can have its own customizer with unique options.
 
-## What is an Option Set?
+## How Product Customizers Work
 
-Think of an option set as a template for customization. It contains all the options you want to offer for a specific product or group of products. For example, a "Jewelry Engraving" option set might include:
+In Podifai, customizers are created directly on products. When you click "Add Options" on a product, you're creating a customizer for that specific product. The customizer contains all the options you want to offer for personalization.
+
+For example, a "Personalized Necklace" customizer might include:
 
 -   Metal finish (Color Swatch)
 -   Engraving text (Text Input)
--   Number of discs (Dropdown)
+-   Number of pendants (Dropdown)
 
-## Creating Your First Option Set
+## Creating Your First Customizer
 
-1.  From your Podifai dashboard, navigate to **Option Sets**.
-2.  Click the **Create Option Set** button.
-3.  Give your option set a descriptive name (e.g., "Custom T-Shirt Options").
-4.  Click **Create**.
+1.  From the Podifai **Products** page, find the product you want to customize.
+2.  Click the **Add Options** button.
+3.  You'll be taken to the visual editor where you can add and configure options.
 
-![Creating a new option set](/images/screenshots/settings/create-option-set.png)
-*Give your option set a clear, descriptive name.*
+![Creating a new customizer](/images/screenshots/settings/add-options.png)
+*Click "Add Options" to start building your customizer.*
 
-## Adding Options to Your Set
+## Adding Options to Your Customizer
 
-Once you've created an option set, you can start adding options:
+Once you're in the editor, you can add options from the left sidebar:
 
-1.  In the option set editor, click **Add Option**.
-2.  Select the option type you want to add (e.g., Color Swatch, Text Input).
-3.  Configure the option settings.
-4.  Click **Save**.
+1.  Click on the **Options** tab in the left sidebar.
+2.  Browse the available option types organized by category:
+    -   **Select**: Image Swatch, Color Swatch, Font Swatch, Dropdown, Badge Group
+    -   **Inputs**: Text Input, Text Area, Image Upload
+    -   **Presentation**: Text Display
+3.  Click on an option type to add it to your customizer.
+4.  Configure the option properties in the right sidebar.
 
 Repeat this process to add as many options as you need.
 
 ## Organizing Your Options
 
-You can drag and reorder your options to control the sequence in which they appear on the product page. Simply click and drag an option to move it up or down.
+You can reorder your options to control the sequence in which they appear on the product page:
+
+1.  Switch to the **My Layers** tab in the left sidebar.
+2.  Drag and drop options to reorder them.
+3.  The order here reflects the order on your product page.
 
 ![Reordering options](/images/screenshots/settings/reorder-options.png)
 *Drag and drop to reorder your options.*
 
-## Option Set Settings
+## Option Properties
 
-### Display Settings
+Each option has configurable properties in the right sidebar:
 
--   **Layout**: Choose between standard, accordion, or popup display
--   **Theme**: Select a pre-built theme or customize colors and fonts
+### General Settings
 
-### Assignment Settings
+-   **Display type**: Choose between Standard (always visible) or Collapsible (accordion style)
+-   **Label value**: The name shown to customers
+-   **Placeholder**: Hint text for input fields
+-   **Required field**: Whether customers must complete this option
 
--   **Products**: Assign the option set to specific products
--   **Collections**: Apply to all products in a collection
--   **Tags**: Use product tags for automatic assignment
+### Help Text (Standard mode only)
 
-## Managing Multiple Option Sets
+-   **Hint**: A clickable label (e.g., "Size guide", "Color guide")
+-   **Value**: The detailed help text that appears when clicked
 
-You can create multiple option sets for different product types. For example:
+### Selection Requirements
 
--   "Jewelry Customization" for rings and necklaces
--   "Apparel Options" for t-shirts and hoodies
--   "Home Decor Personalization" for pillows and wall art
+For options with multiple values:
+-   **Allow multiple option values**: Let customers select more than one value
+-   **Min selections**: Minimum number of selections required
+-   **Max selections**: Maximum number of selections allowed
+
+### Pricing
+
+-   **Price**: Enable additional pricing for this option
+-   **Additional Price**: The extra amount to add when this option has a value
+
+## Saving Your Customizer
+
+After configuring your options:
+
+1.  Click the **Save** button in the header.
+2.  Your customizer is saved and will appear on your product page once the app is activated.
+
+<Tip>
+Changes are saved immediately when you click Save. There's no separate publish step needed.
+</Tip>
+
+## Managing Existing Customizers
+
+To edit a customizer you've already created:
+
+1.  Go to the **Products** page.
+2.  Find the product with the customizer (shown as "Added" status).
+3.  Click the **Edit Options** button.
+4.  Make your changes in the editor.
+5.  Click **Save** to update.
+
+## Using Templates
+
+If you're creating similar customizers for multiple products, you can use templates:
+
+1.  When clicking "Add Options" on a new product, you'll see available templates.
+2.  Select a template to start with pre-configured options.
+3.  Customize the options as needed for your specific product.
+4.  Click **Save** to apply.
+
+<Note>
+Templates provide a starting point but create an independent customizer for each product. Changes to one product's customizer don't affect others.
+</Note>
 
 ## Best Practices
 
 <Tip>
-Use clear, descriptive names for your option sets to make them easy to identify and manage.
+Use clear, descriptive labels for your options to help customers understand their choices.
 </Tip>
 
-<Note>
-You can apply the same option set to multiple products, saving you time and ensuring consistency across your store.
-</Note>
+<Tip>
+Group related options together by ordering them logically in My Layers.
+</Tip>
+
+<Tip>
+Use the Collapsible display type for options with many values to keep the product page clean.
+</Tip>
 
 ## Next Steps
 
-Now that you've created an option set, you can:
+Now that you've created a customizer, you can:
 
 -   [Add different option types](/building-customizers/option-types/overview)
 -   [Set up conditional logic](/building-customizers/settings/conditional-logic)
